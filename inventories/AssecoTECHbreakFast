@@ -1,0 +1,4 @@
+[AssecoTECHbreakFast]
+
+tech-1 ansible_host=10.17.200.1
+tech-2 ansible_host=10.17.200.2

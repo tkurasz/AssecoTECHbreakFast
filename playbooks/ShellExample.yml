@@ -1,0 +1,25 @@
+---
+
+- hosts: all
+
+  gather_facts: no
+  
+  tasks:
+
+  - name: Whoami root
+    shell: "whoami"
+    register: whoami_result
+    become: true
+    
+  - name: "Whoami result with become"
+    debug:
+     msg: "{{ whoami_result }}"
+    when: whoami_result.stdout != "root"
+    
+  - name: Whoami user without become
+    shell: "whoami"
+    register: whoami_result
+    
+  - name: "Whoami result without become"
+    debug:
+     msg: "{{ whoami_result }}"

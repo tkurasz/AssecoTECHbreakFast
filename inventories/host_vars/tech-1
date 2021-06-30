@@ -1,0 +1,3 @@
+---
+# tech-1 vars:
+var1_gr3: "value1 gr3 - overrided by host var"

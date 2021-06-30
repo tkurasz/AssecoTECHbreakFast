@@ -1,0 +1,12 @@
+[Group1]
+tech-3 ansible_host=10.17.201.27
+
+[Group2]
+tech-4 ansible_host=10.17.201.27
+
+[Group3]
+tech-1
+tech-2
+
+[Group3:children]
+Group1
